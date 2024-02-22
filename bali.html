@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GT Holidays</title>
+  <link rel="stylesheet" href="img.css">
+  <link rel="stylesheet" href="img2.css">
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Comforter+Brush&family=Heebo:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a>
+        <img src="./assets/images/gtsmalllogo.png" class="help" alt="Logo" title="gt holidays" width="50" height="30">
+      </a>
+      <h1 class="logo">&nbspgt holidays</h1>
+
+      <button class="nav-toggle-btn" data-nav-toggle-btn aria-label="Toggle Menu">
+        <ion-icon name="menu-outline" class="open"></ion-icon>
+        <ion-icon name="close-outline" class="close"></ion-icon>
+      </button>
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="index.html" class="navbar-link">Home</a>
+          </li>
+
+          <li>
+            <a href="aboutus.html" class="navbar-link">About Us</a>
+          </li>
+
+          <li>
+            <a href="extra.html" class="navbar-link">Destinations</a>
+          </li>
+
+          <li>
+            <a href="blog.html" class="navbar-link">Blog</a>
+          </li>
+        
+
+          <li>
+            <a href="contactus.html" class="navbar-link">Contact Us</a>
+          </li>
+
+        </ul>
+
+        <a href="enquire.html" class="btn btn-secondary">Enquire Now</a>
+
+      </nav>
+
+    </div>
+  </header>
+
+  <img src="./img/l1.jpg" width="1525" height="3000" alt="Vec">
+   
+
+      
+<!-- Slideshow container -->
+<div class="slideshow-container">
+  <br><br>
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 5</div>
+    <img src="./img/bali1.avif" class="img2" width="400" height="300" alt="Vec">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 5</div>
+    <img src="./img/bali2.avif" class="img2" width="400" height="300" alt="Vec">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 5</div>
+    <img src="./img/bali3.avif" class="img2" width="400" height="300" alt="Vec">
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 5</div>
+    <img src="./img/bali4.avif" class="img2" width="400" height="300" alt="Vec">
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">5 / 5</div>
+    <img src="./img/bali5.avif" class="img2" width="400" height="300" alt="Vec">
+  </div>
+
+  <!-- Next and previous buttons -->
+  
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+</div>
+
+<script>
+  let slideIndex = 0;
+  showSlides();
+  
+  function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+  }
+  </script>
+
+
+  <img src="./img/l2.jpg" class="img" width="700" height="800" alt="Vec">
+  <img src="./img/l3.jpg" class="img" width="700" height="800" alt="Vec">
+  <img src="./img/l4.jpg" class="img" width="700" height="800" alt="Vec">
+  <img src="./img/l5.jpg" class="img" width="700" height="800" alt="Vec">
+  
